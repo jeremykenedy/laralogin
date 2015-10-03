@@ -1,4 +1,5 @@
 ## About LaraLogin
+[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
 
 Laravel 5.1 with Laravel Scaffolding **User** and **Administrator Authentication**.
 Laralogin is an instance of Laravel 5.1 with user/admin **authentication** and **management**.
@@ -85,7 +86,7 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT) [![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
 
 ---
 
