@@ -168,11 +168,10 @@ ERR_NAME_NOT_RESOLVED
 
 ##### 1. Check Vagrant/Homestead configuration
 ###### a. Open configuration with the following command:
-
-vim ~/.homestead/Homestead.yaml or laraedit
+```vim ~/.homestead/Homestead.yaml or laraedit```
 
 ##### b. Check to make sure your folders are mapped (See example A1.):
-Note:
+***Note:***
 map: Is the path to the your files on your local machine
 to: Is the virtual file path to your projects that vagrant will create
 ###### Example A1
