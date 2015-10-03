@@ -15,21 +15,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('home', ['middleware' => 'auth', function(){
+	echo 'Welcome home '. Auth::user()->email .' .';
 
-Route::get('home', function () {
-	if (Auth::guest()) {
-		return Redirect::to('auth/login');
-	} else {
-		echo 'Welcome home '. Auth::user()->email .' .';
-	}
-});
+}]);
 
-Route::get('user/{id}', function($id){
+Route::get('user/{id}', ['middleware' => 'auth', function($id){
 	$user = App\User::find($id);
 	echo 'User ID: '	. $id.			'<br />';
 	echo 'User Email: '	. $user->email.	'<br />';
 	echo 'User Name: '	. $user->name.	'<br />';
-});
+}]);
 
 
 // Authentication routes...
