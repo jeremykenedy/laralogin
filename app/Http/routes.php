@@ -17,7 +17,18 @@ Route::get('/', function () {
 
 
 Route::get('home', function () {
-    return view('welcome');
+	if (Auth::guest()) {
+		return Redirect::to('auth/login');
+	} else {
+		echo 'Welcome home '. Auth::user()->email .' .';
+	}
+});
+
+Route::get('user/{id}', function($id){
+	$user = App\User::find($id);
+	echo 'User ID: '	. $id.			'<br />';
+	echo 'User Email: '	. $user->email.	'<br />';
+	echo 'User Name: '	. $user->name.	'<br />';
 });
 
 
