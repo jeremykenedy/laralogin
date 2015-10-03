@@ -78,7 +78,7 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
 
-##### Official Laravel Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+###### Official Laravel Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
 
 ## Contributing
 
@@ -98,7 +98,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 #### VAGRANT Dev Environment References
 
-##### VAGRANT Virtual Machine Details
+###### VAGRANT Virtual Machine Details
 |Item        |Value:
 |:------------- |:-------------|
 |Hostname|homestead|
@@ -109,28 +109,28 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 |Database Port|33060|
 |Database Username|homestead|
 |Database Password|secret|
-##### Start VAGRANT
+###### Start VAGRANT
 |Command        |Action
 |:------------- |:-------------|
 | `vagrant up` | Start Vagrant VM |
 | `vagrant up --provision` | Start Vagrant VM if vagrantfile updated |
 | `vagrant halt` | Stop Vagrant VM |
 
-##### Access VAGRANT SSH and MySQL
+###### Access VAGRANT SSH and MySQL
 |Command        |Action      |
 |------------- |:------------- |:-------------|
 | ```sudo ssh vagrant@127.0.0.1 -p 222``` | Access Vagrant VM via SSH. Password is ``` vagrant  ``` |
 | ```mysql -u homestead -psecret``` | Access Vagrant VM MySQL. Password is ``` vagrant  ``` |
 
-### COMPOSER Installation Reference
+#### COMPOSER Installation Reference
 
-##### COMPOSER can be installed using the following commands:
+###### COMPOSER can be installed using the following commands:
 ```
 sudo curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
 ```
 
-##### COMPOSER on MAC OS X can be installed using the following commands:
+###### COMPOSER on MAC OS X can be installed using the following commands:
 ```
 sudo brew update
 sudo brew tap homebrew/dupes
@@ -138,9 +138,9 @@ sudo brew tap homebrew/php
 sudo brew install composer
 ```
 
-### NODE JS Installation Reference
+#### NODE JS Installation Reference
 
-##### Node JS can be installed muliple ways:
+###### Node JS can be installed muliple ways:
 1. Mac GUI Installer, easiest way (Simply [Download](https://nodejs.org/en/) and Install)
 2. Command Line Interface (CLI) using Homebrew Package Manager with the following command:
 ```
@@ -151,23 +151,23 @@ brew install node
 
 ## Things not working (Troubleshooting)?
 
-#### Issue: The project has a blank white screen in the browser
+##### Issue: The project has a blank white screen in the browser
 
-##### Check/Update permissions with the following command
+###### Check/Update permissions with the following command
 ```
 sudo chmod -R 755 laralogin/
 ```
 
-#### Issue: Cannot access project through web browser after running vagrant up / homestead up
+##### Issue: Cannot access project through web browser after running vagrant up / homestead up
 
-##### Error Message from Browser:
+###### Error Message from Browser:
 ```
 This webpage is not available
 ERR_NAME_NOT_RESOLVED
 ```
 
-#### 1. Check Vagrant/Homestead configuration
-##### a. Open configuration with the following command:
+##### 1. Check Vagrant/Homestead configuration
+###### a. Open configuration with the following command:
 
 vim ~/.homestead/Homestead.yaml or laraedit
 
