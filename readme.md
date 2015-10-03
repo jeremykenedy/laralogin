@@ -38,10 +38,10 @@ MAIL_ENCRYPTION=null
 5. From the projects root folder run `php artisan migrate`
 
 ### Authorization URL's
-*```/auth/login```
-*```/auth/logout```
-*```/auth/register```
-*```/user/{user id}```
+* ```/auth/login```
+* ```/auth/logout```
+* ```/auth/register```
+* ```/user/{user id}```
 
 ### File Structure
 ```
