@@ -153,7 +153,7 @@ brew install node
 
 ##### Issue: The project has a blank white screen in the browser
 
-###### Check/Update permissions with the following command
+###### Check/Update permissions with the following command:
 ```
 sudo chmod -R 755 laralogin/
 ```
