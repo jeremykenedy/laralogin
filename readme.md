@@ -104,7 +104,7 @@ sudo brew install composer
 
 ## Things not working (Troubleshooting)?
 
-### The project has a blank white screen in the browser
+### Issue: The project has a blank white screen in the browser
 
 #### Check/Update permissions with the following command
 ```
