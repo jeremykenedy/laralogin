@@ -3,7 +3,7 @@
 Laravel 5.1 with Laravel Scaffolding **User** and **Administrator Authentication**.
 Laralogin is an instance of Laravel 5.1 with user/admin **authentication** and **management**.
 This is a build out of [Laravel 5.1 Authentication Documentation](http://laravel.com/docs/5.1/authentication).
-There is a semantic build by design to only have the necessary components. Basic Routing and blade template structure is used in this example.
+This is a **semantic** build by design to only have the necessary components. Basic Routing and blade template structure is used in this example.
 This is an example to be used as a baseline for [Laravel 5.1 user authentication](http://laravel.com/docs/5.1/authentication).
 
 ## Installation/Quick Project Setup
@@ -13,7 +13,7 @@ This is an example to be used as a baseline for [Laravel 5.1 user authentication
 4.
 5.
 
-### File location
+### File locations
 ```
 laralogin/
    ├── app/
