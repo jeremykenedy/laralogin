@@ -58,56 +58,56 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## Development Environement References and help
 
-	### VAGRANT Dev Environment References
+### VAGRANT Dev Environment References
 
-		#### VAGRANT Virtual Machine Details
-		|Item        |Value:
-		|:------------- |:-------------|
-		|Hostname|homestead|
-		|IP Address|192.168.10.10|
-		|Username|vagrant|
-		|SU Password|vagrant|
-		|Database Host|127.0.0.1|
-		|Database Port|33060|
-		|Database Username|homestead|
-		|Database Password|secret|
-		#### Start VAGRANT
-		|Command        |Action
-		|:------------- |:-------------|
-		| `vagrant up` | Start Vagrant VM |
-		| `vagrant up --provision` | Start Vagrant VM if vagrantfile updated |
-		| `vagrant halt` | Stop Vagrant VM |
+#### VAGRANT Virtual Machine Details
+|Item        |Value:
+|:------------- |:-------------|
+|Hostname|homestead|
+|IP Address|192.168.10.10|
+|Username|vagrant|
+|SU Password|vagrant|
+|Database Host|127.0.0.1|
+|Database Port|33060|
+|Database Username|homestead|
+|Database Password|secret|
+#### Start VAGRANT
+|Command        |Action
+|:------------- |:-------------|
+| `vagrant up` | Start Vagrant VM |
+| `vagrant up --provision` | Start Vagrant VM if vagrantfile updated |
+| `vagrant halt` | Stop Vagrant VM |
 
-		#### Access VAGRANT SSH and MySQL
-		|:Command        |Action      |
-		|------------- |:------------- |:-------------|
-		| ```sudo ssh vagrant@127.0.0.1 -p 222``` | Access Vagrant VM via SSH. Password is ``` vagrant  ``` |
-		| ```mysql -u homestead -ppassword``` | Access Vagrant VM MySQL. Password is ``` vagrant  ``` |
+#### Access VAGRANT SSH and MySQL
+|:Command        |Action      |
+|------------- |:------------- |:-------------|
+| ```sudo ssh vagrant@127.0.0.1 -p 222``` | Access Vagrant VM via SSH. Password is ``` vagrant  ``` |
+| ```mysql -u homestead -ppassword``` | Access Vagrant VM MySQL. Password is ``` vagrant  ``` |
 
-	### COMPOSER Installation Reference
+### COMPOSER Installation Reference
 
-		#### COMPOSER can be installed using the following commands:
-		```
-		sudo curl -sS https://getcomposer.org/installer | php
-		sudo mv composer.phar /usr/local/bin/composer
-		```
+#### COMPOSER can be installed using the following commands:
+```
+sudo curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer
+```
 
-		#### COMPOSER on MAC OS X can be installed using the following commands:
-		```
-		sudo brew update
-		sudo brew tap homebrew/dupes
-		sudo brew tap homebrew/php
-		sudo brew install composer
-		```
+#### COMPOSER on MAC OS X can be installed using the following commands:
+```
+sudo brew update
+sudo brew tap homebrew/dupes
+sudo brew tap homebrew/php
+sudo brew install composer
+```
 
-	### NODE JS Installation Reference
+### NODE JS Installation Reference
 
-		#### Node JS can be installed muliple ways:
-		1. Mac GUI Installer, easiest way (Simply [Download](https://nodejs.org/en/) and Install)
-		2. Command Line Interface (CLI) using Homebrew Package Manager with the following command:
-			```
-			brew install node
-			```
+#### Node JS can be installed muliple ways:
+1. Mac GUI Installer, easiest way (Simply [Download](https://nodejs.org/en/) and Install)
+2. Command Line Interface (CLI) using Homebrew Package Manager with the following command:
+```
+brew install node
+```
 
 ---
 
