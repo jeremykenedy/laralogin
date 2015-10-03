@@ -8,10 +8,37 @@ This is an example to be used as a baseline for [Laravel 5.1 user authentication
 
 ## Installation/Quick Project Setup
 1. Run `sudo git clone https://github.com/jeremykenedy/laralogin.git laralogin`
-2.
-3.
-4.
-5.
+2. Create a MySQL database for the project
+    * ```mysql -u root -p```, if using Vagrant: ```mysql -u homestead -psecret```
+    * ```create database laralogin;```
+    * ```\q```
+3. Copy the .env.example file with command ```sudo cp .env.example .env```
+4. Update the .env file with the database settings, see example .env below:
+```
+APP_ENV=local
+APP_DEBUG=true
+APP_KEY=SomeRandomString
+
+DB_HOST=localhost
+DB_DATABASE=laralogin
+DB_USERNAME=homestead
+DB_PASSWORD=secret
+
+CACHE_DRIVER=file
+SESSION_DRIVER=file
+QUEUE_DRIVER=sync
+
+MAIL_DRIVER=smtp
+MAIL_HOST=mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=null
+MAIL_PASSWORD=null
+MAIL_ENCRYPTION=null
+
+```
+5. From the projects root folder run ```php artisan migrate```
+
+
 
 ### File locations
 ```
@@ -82,7 +109,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 |:Command        |Action      |
 |------------- |:------------- |:-------------|
 | ```sudo ssh vagrant@127.0.0.1 -p 222``` | Access Vagrant VM via SSH. Password is ``` vagrant  ``` |
-| ```mysql -u homestead -ppassword``` | Access Vagrant VM MySQL. Password is ``` vagrant  ``` |
+| ```mysql -u homestead -psecret``` | Access Vagrant VM MySQL. Password is ``` vagrant  ``` |
 
 ### COMPOSER Installation Reference
 
