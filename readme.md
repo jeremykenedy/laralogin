@@ -34,10 +34,8 @@ MAIL_PORT=2525
 MAIL_USERNAME=null
 MAIL_PASSWORD=null
 MAIL_ENCRYPTION=null
-
 ```
-5. From the projects root folder run ```php artisan migrate```
-6.
+5. From the projects root folder run `php artisan migrate`
 
 
 ### File Structure
