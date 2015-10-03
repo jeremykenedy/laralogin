@@ -83,9 +83,9 @@ I would love to see your versions. To contribute to the repo please keep the sub
 
 If you discover a security vulnerability within Laravel, please send an e-mail to Jeremy Kenedy at jeremy@jeremykenedy.com. All security vulnerabilities will be promptly addressed.
 
-## License
+## License [![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT) [![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
 
 ---
 
