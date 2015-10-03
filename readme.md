@@ -40,19 +40,27 @@ MAIL_ENCRYPTION=null
 6.
 
 
-### File locations
+### File Structure
 ```
 laralogin/
+   ├── .env
+   ├── composer.json
+   ├── server.php
    ├── app/
-   │   ├── Http/
-   │   │   └── routes.php
+   │   └── Http/
+   │       ├── kernal.php
+   │       ├── routes.php
+   │       └── Middleware/
+   │           └── Authenticate.php
    ├── config/
    │   ├── app.php
    │   ├── database.php
    │   └── view.php
-   ├── .env
-   ├── composer.json
-   └── server.php
+   └── resources/
+       └── views
+           └── auth/
+               ├── login.blade.php
+               └── register.blade.php
 ```
 
 ## Laravel PHP Framework
