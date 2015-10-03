@@ -37,7 +37,7 @@ MAIL_ENCRYPTION=null
 
 ```
 5. From the projects root folder run ```php artisan migrate```
-
+6.
 
 
 ### File locations
