@@ -27,6 +27,13 @@ Route::get('user/{id}', ['middleware' => 'auth', function($id){
 	echo 'User Name: '	. $user->name.	'<br />';
 }]);
 
+Route::get('admin', ['middleware' => 'admin', function(){
+	echo 'Welcome to your admin page '. Auth::user()->email .'.';
+}]);
+
+Route::get('superadmin', ['middleware' => 'superadmin', function(){
+	echo 'Welcome to your superadmin page '. Auth::user()->email .'.';
+}]);
 
 // Authentication routes...
 Route::get('auth/login', 'Auth\AuthController@getLogin');

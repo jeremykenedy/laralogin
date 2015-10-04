@@ -42,28 +42,50 @@ MAIL_ENCRYPTION=null
 * ```/auth/logout```
 * ```/auth/register```
 * ```/user/{user id}```
+* ```/auth/admin```
+* ```/auth/superadmin```
 
 ### File Structure
 ```
 laralogin/
-   ├── .env
-   ├── composer.json
-   ├── server.php
-   ├── app/
-   │   └── Http/
-   │       ├── kernal.php
-   │       ├── routes.php
-   │       └── Middleware/
-   │           └── Authenticate.php
-   ├── config/
-   │   ├── app.php
-   │   ├── database.php
-   │   └── view.php
-   └── resources/
-       └── views
-           └── auth/
-               ├── login.blade.php
-               └── register.blade.php
+    ├── .env
+    ├── composer.json
+    ├── server.php
+    ├── app/
+    │    ├── user.php
+    │    └── Http/
+    │       ├── kernal.php
+    │       ├── routes.php
+    │       ├── Auth/
+    │       │   ├── AuthController.php
+    │       │   └── PasswordController.php
+    │       ├── Requests/
+    │       │   └── Request.php
+    │       └── Middleware/
+    │           ├── Admin.php
+    │           ├── Authenticate.php
+    │           └── SuperAdmin.php
+    ├── config/
+    │   ├── app.php
+    │   ├── auth.php
+    │   ├── database.php
+    │   ├── services.php
+    │   ├── session.php
+    │   └── view.php
+    ├── database/
+    │   ├── migrations/
+    │   │   ├── 2014_10_12_000000_create_users_table.php
+    │   │   ├── 2014_10_12_100000_create_password_resets_table.php
+    │   │   ├── 2015_10_04_042943_add_admin_to_users_table.php
+    │   │   └── 2015_10_04_081316_add_superadmin_to_users_table.php
+    │   └── seeds/
+    ├── public/
+    │   └── index.php
+    └── resources/
+        └── views
+            └── auth/
+                ├── login.blade.php
+                └── register.blade.php
 ```
 
 ## Laravel PHP Framework
